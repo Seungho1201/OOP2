@@ -22,9 +22,12 @@ public class student {
     student(int id, String name){
         this.id = id;       // this 키워드는 student class 필드 내에 있는 변수 지정
         this.name = name;   // = 뒤의 변수(id, name)은 생성자의 매개변수
+
+        // 생성자 내에서의 기능 구현
         System.out.println("일반 생성자(오버로딩)호출 id : " + this.id);
         System.out.println("일반 생성자(오버로딩)호출 name : " + this.name);
     }
+
     // 출력 메소드
     void printInfo(){
         System.out.println("아이디 : " + id);
