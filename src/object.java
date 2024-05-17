@@ -14,7 +14,12 @@ public class object {
         stdObj2.name = "ohseungho";
         stdObj2.printInfo();
 
-        student stdObj3 = new student("SSeungho", 202002058);    //일반 생성자 호출(오버로딩)
+        student stdObj3 = new student(202002058, "SSSSS");    //일반 생성자 호출(오버로딩)
+        // id와 name 둘 다 생성자로 넘겨주어 객체 생성
         stdObj3.printInfo();
+
+        // 자식클래스 객체 생성
+        student_use test = new student_use();
+        test.print();
     }
 }
